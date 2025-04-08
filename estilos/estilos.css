@@ -1,42 +1,64 @@
-/*Aqui van a ir los estilos css para el index.html*/
-
+/*Estilos del index*/
 * {
     margin: 0;
+    /*Elimina el margen por defecto de todos los elementos html*/
     padding: 0;
+    /*Elimina márgenes internos de cada componente*/
+    /*Definimos el modelo de cajas para navegadores basados en webkit, 
+    googleChrome, internet explorer, edge*/
+    -webkit-box-sizing: border-box;
+    /*Definimos el modelo de cajas para navegadores basados 
+    en mozilla, firefox*/
+    -moz-box-sizing: border-box;
+    /*Definimos el modelo de cajas para navegadores basados 
+    en el estandar CSS3*/
     box-sizing: border-box;
-    background-color: #946e5b;
-    color:white
 }
 
-/*Estilo body*/
+/*Definimos estilo para el body*/
 body {
-    background-color: #425c8f;
-    font-family: "Courier New", Courier, monospace;
-    font-size: 15px;
-    color:white
+    font-family: "Open Sans", Arial, Sans-serif;
+    font-size: 16px;
 }
 
-/*Estilo header*/
+/*Trabajamos en los estilo de la clase contenedor*/
+.contenedor {
+    /*Definir ancho de contenedor*/
+    width: 90%;
+    /*Definimos el color de fondo del contenedor*/
+    background-color: rgb(136, 167, 167);
+    /*Definimos anchura máxima del contenedor*/
+    max: width 1000px;
+    /*Definimos el margen en automático para centrar el contenedor*/
+    margin: auto;
+    /*Ocultamos el desboradamiento del contenedor*/
+    overflow: hidden;
+}
 
+/*Damos estilo al header*/
 header {
-    background-color: #f3f8f2;
+    /*Definimos header a un %100*/
+    width: 100%;
+    background: url(../img/bg.jpg) #281a0c;
+    /*Si no encuentra imagen , usa el color*/
+    background-size: cover;
+    /*Imagen cubre todo el contenedor, para fondos ROSETA*/
+    background-attachment: fixed;
+    /*La imagen se queda quieta con el scroll*/
+    background-position: center 0;
 }
 
-header h1 {
-    color: #f7f0f0f6;
-    text-align: center;
+/*Damos estilo al header y que busque una clase que se llame contenedor*/
+header .contenedor {
+    position: relative;
+    height: 1000px;
+    /*La imagen se va a adaptar al tamaño de contenedor gracias a background-attachment:cover;*/
 }
 
-.menu {
-    text-align: center;
-}
-
-a {
-    text-decoration:none;
-}
-
-a:hover {   
-    text-decoration-line: underline;
-    color: #3f3535;
-
+/*Damos estilos al menú dentro del header*/
+header .menu {
+    /*Le damos el tamaño de la anchuta*/
+    width: 100%;
+    /*Le decimos que alinee el texto a la derecha*/
+    text-align: right;
 }

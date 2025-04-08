@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="estilos/estilos.css">
     <title>Cafeteria Don Hidalgo</title>
 
@@ -18,14 +22,14 @@
     <!-- Inicio del header-->
     <header>
         <!--Menú de navegación-->
-        <div>
-            <nav>
+        <div class="contenedor">
+            <nav class=""menu-->
                 <a href="#" id="btn-acerca-de">Acerca de</a>
                 <a href="#" id="menu">Menú</a>
                 <a href="#" id="galeria">Galería</a>
                 <a class="menu" href="#" id="btn-ubicacion">Ubicación</a>
             </nav>
-            <div>
+            <div class="texto">
                 <h1> Cafetería <span> Don Hidalgo </span></h1>
                 <h3> Refugio del tiempo, donde el corazón se abriga entre café y recuerdos </h3>
             </div>
@@ -33,26 +37,128 @@
 
     </header> <!--  Fin del header-->
 
-    <!-- Inicio del main-->
-    <section>
-        <!--Inicio Acerca de-->
-        <section id="acerca-de">
-            <div>
+    <section class="main">
+
+        <!-- Inicio del main-->
+        <section> <!--Inicio sección acerca de-->
+            <!--Inicio Acerca de-->
+            <section id="acerca-de">
                 <div>
-                    <img src="img/acerca-de.jpg" alt="Acerca de lobby   width="500" height="400">
+                    <div>
+                        <img src="img/acerca-de.jpg" alt="Acerca de lobby   width=" 500" height="400">
+                    </div>
+                    <article>
+                        <h3>Acerca de</h3>
+                        <p>En el corazón del Valle de los Chillos, donde el tiempo parece avanzar con más calma, nació a
+                            principios de los años sesenta la Cafetería Don Hidalgo, fundada por una joven pareja que
+                            conocía los secretos y virtudes del café como quien conoce los latidos del alma. Entre mesas
+                            de
+                            madera y tazas humeantes, levantaron un rincón donde el aroma del café recién hecho se
+                            convirtió
+                            en refugio de conversaciones, miradas y silencios compartidos.
+                        </p>
+                        <br>
+                        <p>Hoy, Don Hidalgo sigue siendo ese lugar donde los recuerdos se mezclan con el perfume tostado
+                            del
+                            grano, y cada sorbo evoca historias que el tiempo no ha podido borrar. Te invitamos a
+                            visitarnos, a sentarte junto a una ventana y dejar que el alma descanse entre suspiros de
+                            café y
+                            ecos del pasado. Aquí, la tradición sigue viva en cada taza.</p>
+                    </article>
                 </div>
-                <article>
-                    <h3>Acerca de</h3>
-                    <p></p>
-                    <p></p>
-                </article>
+
+
+            </section>
+        </section> <!-- Fin de acerca de-->
+
+        <!--Inicio de la sección menu-->
+        <section class="" menu>
+            <div class="contenedor">
+                <h3 class="titulo" id="platillo"> Menú </h3>
+                <div class="contenedor-menu2">
+                    <article>
+                        <p class="categoria">De comer</p>
+                        <div class="platillo">
+                            <p class="nombre">Arroz con camarón</p>
+                            <p class="precio">$8.50</p>
+                            <p class="descripcion">El arroz con camarón viene arroz, camarón y yuca frita.</p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Arroz con pollo</p>
+                            <p class="precio">$6.50</p>
+                            <p class="descripcion">El arroz con pollo viene arroz, pollo y yuca frita.</p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Arroz con carne</p>
+                            <p class="precio">$5.50</p>
+                            <p class="descripcion">El arroz con carne viene arroz, carne y yuca frita.</p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Encebollado</p>
+                            <p class="precio">$10.50</p>
+                            <p class="descripcion"> viene concha, camarón y yuca frita.</p>
+                        </div>
+                    </article> <!--Fin de la sección de comidas-->
+
+                    <!--Inicio sección bebidas-->
+
+
+                    <article>
+                        <p class="categoria">bebidas</p>
+                        <div class="platillo">
+                            <p class="nombre">Café</p>
+                            <p class="precio">$1.50</p>
+                            <p class="descripcion">Café americano </p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Té</p>
+                            <p class="precio">$2.0</p>
+                            <p class="descripcion">Té de limón </p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Té de hierbas</p>
+                            <p class="precio">$0.50</p>
+                            <p class="descripcion">Té de hierba luisa </p>
+                        </div>
+                        <div class="platillo">
+                            <p class="nombre">Chocolate</p>
+                            <p class="precio">$2.50</p>
+                            <p class="descripcion">Chocolate ambateño </p>
+                        </div>
+                    </article> <!--Fin de la sección bebidas-->
+                </div>
             </div>
+        </section> <!--Fin de la sección menú-->
 
+        <section> <!--Inicio sección galería-->
+            <section class="galeria" id="galeria"></section>
+            <div class="foto">
+                <img src="img/1.jpg" alt="cafe">
+            </div>
+            <div class="foto">
+                <img src="img/2.jpg" alt="cafe">
+            </div>
+            <div class="foto">
+                <img src="img/3.jpg" alt="cafe">
+            </div>
+            <div class="foto">
+                <img src="img/4.jpg" alt="cafe">
+            </div>
+            <div class="foto">
+                <img src="img/5.jpg" alt="cafe">
+            </div>
+            <div class="foto">
+                <img src="img/6.jpg" alt="cafe">
+            </div>
+            <div class="foto">
+                <img src="img/7.jpg" alt="cafe">
+            </div>
+            <div class="foto">
+                <img src="img/8.jpg" alt="cafe">
+            </div>
+        </section> <!--Fin de la sección galería-->
 
-        </section>
     </section>
-
-
 </body>
 
 </html>
