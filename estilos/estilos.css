@@ -26,9 +26,9 @@ body {
     /*Definir ancho de contenedor*/
     width: 90%;
     /*Definimos el color de fondo del contenedor*/
-    background-color: rgb(136, 167, 167);
+    /*background-color: rgb(136, 167, 167);*/
     /*Definimos anchura máxima del contenedor*/
-    max: width 1000px;
+    max-width: 1000px;
     /*Definimos el margen en automático para centrar el contenedor*/
     margin: auto;
     /*Ocultamos el desboradamiento del contenedor*/
@@ -51,14 +51,96 @@ header {
 /*Damos estilo al header y que busque una clase que se llame contenedor*/
 header .contenedor {
     position: relative;
-    height: 1000px;
+    height: 500px;
     /*La imagen se va a adaptar al tamaño de contenedor gracias a background-attachment:cover;*/
 }
 
 /*Damos estilos al menú dentro del header*/
 header .menu {
-    /*Le damos el tamaño de la anchuta*/
+    /*Le damos el tamaño de la anchura*/
     width: 100%;
     /*Le decimos que alinee el texto a la derecha*/
     text-align: right;
+}
+
+/*Le damos estilos a las etiquetas del menú*/
+header .menu a {
+    /*Se da color a las etiquetas a*/
+    color: white;
+    /*Se configura el tamaño de la letra*/
+    font-size: 20px;
+    /*Se cambia grosor de letra*/
+    font-weight: 300;
+    /*Combinando en sección en línea con bloques*/
+    /*display: inline-block;*/
+    /*Se da margen a los recuadros de menú*/
+    margin: 40px 20px;
+    /*Se quita la línea del menú*/
+    text-decoration: none;
+    /**/
+    position: relative;
+}
+
+/*Utilizamos la seudoclase hover*/
+/*seudoclases se trabajas a parte de las clases*/
+header .menu a:hover {
+    /*Decoración bajo la línea*/
+    text-decoration: underline;
+    /*Color al seleccionar opción*/
+    color: rgb(184, 181, 18)
+}
+
+header .texto {
+    width: 100%;
+    color: white;
+    /*posición de acuerdo a las medidas absolutas y relativas*/
+    position: absolute;
+    /*Contenedor comienza al 50% del contenedor ocupado*/
+    top: 50%;
+    /*Titulo sube a partir del 50% del contenedor*/
+    margin-top: -52px;
+}
+
+header .texto .nombre {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+header .texto .nombre span {
+    /*Se cambia grosor de la letra del título*/
+    font-weight: 300;
+}
+
+/*Se modifica subtítulo*/
+header .texto h3 {
+    /*ancho de letra*/
+    font-weight: 300;
+    font-size: 25px;
+    /*letra cursiva*/
+    font-style: italic;
+}
+
+/*Trabajo en la sección main*/
+.main{
+    /*Colocamos imagen de fondo*/
+    background-image: url(../img/bg-textura.jpg) ;
+    /*para que la imagen se repita*/
+    background-repeat: repeat;
+}
+
+/*sección acerca de*/
+.main .acerca-de .contenedor{
+    overflow:visible;
+    position: relative;
+}
+
+/*Trabajamos con la imagen de body*/
+.main .acerca-de .foto{
+    width: 80%;
+    position:absolute;
+    left:0; 
+    top: -50px;
+    z-index: 0;
+    /*marco de sombra*/
+    box-shadow: 0px 0px 15px 25px rgba(43, 41, 41, 0.35);
 }
