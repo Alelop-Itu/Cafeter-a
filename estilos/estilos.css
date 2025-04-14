@@ -225,9 +225,239 @@ header .texto h3 {
     text-align: center;
 }
 
-.main .menu .platillo{
+.main .menu .platillo {
     margin-bottom: 30px;
     padding-bottom: 20px;
     border-bottom: 4px dotted black;
     overflow: hidden;
+}
+
+.main .menu .nombre {
+    font-size: 20px;
+    margin-bottom: 15px;
+    float: left;
+}
+
+.main .menu .precio {
+    font-size: 20px;
+    margin-bottom: 15px;
+    float: right;
+}
+
+.main .menu .descripcion {
+    font-size: 16px;
+    color: #676767;
+    /*Empujar al contenedor de la mitad hacia abajo*/
+    /*margin-bottom no sirve porque no desplaza al contenedor*/
+    clear: both;
+}
+
+/*Estilos sección galería*/
+.main .galeria {
+    /*oculta contenido que sobresale del contenedor*/
+    overflow: hidden;
+}
+
+.main .galeria .foto {
+    /*Cada imagen ocupa el %25 de la pantalla*/
+    width: 25%;
+    /*Las imágenes se ponen una junto a otra*/
+    float: left;
+}
+
+.main .galeria .foto img {
+    /*La imagen va a ocupar el %100 del contenedor*/
+    width: 100%;
+    /*la imagen se adapta para usar el %100 de la pantalla*/
+    /*alinar de forma vertical en la parte de arriba*/
+    vertical-align: top;
+    opacity: 0.7;
+}
+
+/*Dar efecto al pasar el mouse por una imagen*/
+.main .galeria .foto img:hover {
+    opacity: 1;
+    /*Tipo de acelración de la animación con el hover*/
+    -webkkit-transition: all 0.3s ease;
+    /*la misma transición par navegador opera*/
+    -o-transition: all .3s ease;
+    /*a navegadores modernos*/
+    transition: all 0.3s ease;
+}
+
+/*Sección ubicación*/
+.main .ubicacion{
+    background: #fff;
+    padding: 60px;
+    overflow: hidden;
+}
+
+.main .ubicacion .titulo{
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+/*Contenedor dirección*/
+.main .ubicacion .direccion{
+     /*Coloca la información de horario al mismo nivel de la dirección*/
+     width: 50%;
+     float: left;
+     text-align: left;
+     overflow: hidden;
+}
+
+/*Contenedor horarios*/
+.main .ubicacion .horarios{
+    float: right;
+    width: 50%;
+    text-align: right;
+    overflow: hidden;
+}
+
+/*Contenedor E5 S...*/
+/*.main .ubicacion .direccion .calle{
+    padding: 10px;
+}*/
+
+.main .ubicacion .horarios h4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main .ubicacion .direccion h4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*Coloca horizontalmente la sección horarios*/
+.main .ubicacion .horarios .entre-semana,
+.main .ubicacion .horarios .fin-semana {
+    width: 50%;
+    float: right;
+    text-align: center;
+}
+
+.main .ubicacion .horarios .calle,
+.main .ubicacion .horarios .telefono{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.main .mapa {
+    width: 100%;
+    overflow: hidden;
+}
+
+/*contenedor mapa*/
+/*Hace que el mapa ocupe toda la pantalla*/
+.main .mapa iframe {
+    width: 100%;
+    max-height: 600px;
+}
+
+/*Footer*/
+
+footer {
+    /*Fondo negro*/
+    background: #000;
+}
+
+/*Contenido footer*/
+footer .copyright {
+    text-align: center;
+    padding: 15px 0;
+    color: #fff;
+}
+
+
+/*---Media Querys---*/
+@media screen and (max-width: 800px) {
+    header .contenedor {
+        position: static;
+        height: auto;
+    }
+
+    header .texto {
+        position: static;
+        margin: 100px 0;
+    }
+
+    header .menu {
+        text-align: center;
+        ;
+    }
+
+    header .menu a {
+        margin: 10px 20px;
+    }
+
+    header .texto .nombre {
+        font-size: 30px;
+    }
+
+    header .texto h3 {
+        font-size: 18px;
+    }
+
+    .main .acerca-de .foto {
+        width: 100%;
+        position: relative;
+    }
+
+    .main .acerca-de article {
+        position: relative;
+        width: 100%;
+        top: -50px;
+        transform: translate(0px, 0);
+    }
+
+    .main .menu {
+        padding-top: 300px;
+    }
+
+    .main .menu article {
+        width: 100%;
+    }
+
+    .main .galeria .foto {
+        width: 50%;
+    }
+
+    .main .mapa {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .main .acerca-de article h3 {
+        font-size: 34px;
+        margin-bottom: 10px;
+    }
+
+    .main .menu article .nombre,
+    .main .menu article .precio {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .main .galeria .foto {
+        width: 100%;
+    }
+
+    .main .ubicacion .direccion {
+        margin-bottom: 15px;
+    }
+
+    .main .ubicacion .direccion,
+    .main .ubicacion .horarios {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
 }
